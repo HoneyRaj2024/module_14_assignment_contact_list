@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AppScreen extends StatefulWidget {
+  const AppScreen({super.key});
+
   @override
   _AppScreenState createState() => _AppScreenState();
 }
@@ -102,6 +104,7 @@ class _AppScreenState extends State<AppScreen> {
                     child: Column(
                       children: [
                         TextFormField(
+                          keyboardType: TextInputType.text,
                           controller: _nameController,
                           decoration: InputDecoration(
                             labelText: 'Name',
@@ -125,6 +128,7 @@ class _AppScreenState extends State<AppScreen> {
                         ),
                         const SizedBox(height: 16), // Add space between fields
                         TextFormField(
+                          keyboardType: TextInputType.number,
                           controller: _phoneController,
                           decoration: InputDecoration(
                             labelText: 'Phone Number',
