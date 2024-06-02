@@ -8,6 +8,5 @@ class AssetsRes {
 
   static const String PLUGIN_NAME = 'module_14_assignment_contact_list';
   static const String PLUGIN_VERSION = '1.0.0+1';
-  static const String LOGOAPP = 'assets/logoapp.png';
   static const String MAN = 'assets/man.png';
 }
