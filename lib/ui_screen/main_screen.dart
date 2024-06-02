@@ -43,7 +43,8 @@ class _AppScreenState extends State<AppScreen> {
                 Navigator.of(context).pop();
               },
               icon: const Icon(Icons.cancel, color: Colors.cyan),
-              label: const Text('Cancel', style: TextStyle(color: Colors.black)),
+              label:
+                  const Text('Cancel', style: TextStyle(color: Colors.black)),
             ),
             TextButton.icon(
               onPressed: () {
@@ -51,7 +52,8 @@ class _AppScreenState extends State<AppScreen> {
                 Navigator.of(context).pop();
               },
               icon: const Icon(Icons.delete, color: Colors.cyan),
-              label: const Text('Delete', style: TextStyle(color: Colors.black)),
+              label:
+                  const Text('Delete', style: TextStyle(color: Colors.black)),
             ),
           ],
         );
@@ -63,7 +65,11 @@ class _AppScreenState extends State<AppScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Contact List', style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold,fontSize: 30),),
+        title: const Text(
+          'Contact List',
+          style: TextStyle(
+              color: Colors.white, fontWeight: FontWeight.bold, fontSize: 30),
+        ),
         centerTitle: true,
         backgroundColor: Colors.blue, // Customize the app bar color
       ),
@@ -81,13 +87,15 @@ class _AppScreenState extends State<AppScreen> {
             child: Column(
               children: [
                 Container(
-                  padding: const EdgeInsets.all(16.0), // Add padding inside the container
+                  padding: const EdgeInsets.all(
+                      16.0), // Add padding inside the container
                   decoration: BoxDecoration(
                     color: Colors.grey[300], // Set the background color to gray
                     border: Border.all(
                       color: Colors.blue, // Set the color of the border
                     ),
-                    borderRadius: BorderRadius.circular(10.0), // Set the border radius
+                    borderRadius:
+                        BorderRadius.circular(10.0), // Set the border radius
                   ),
                   child: Form(
                     key: _formKey,
@@ -103,7 +111,8 @@ class _AppScreenState extends State<AppScreen> {
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10.0),
                               borderSide: const BorderSide(
-                                color: Colors.blue, // Set the color of the border
+                                color:
+                                    Colors.blue, // Set the color of the border
                               ),
                             ),
                           ),
@@ -125,7 +134,8 @@ class _AppScreenState extends State<AppScreen> {
                             enabledBorder: OutlineInputBorder(
                               borderRadius: BorderRadius.circular(10.0),
                               borderSide: const BorderSide(
-                                color: Colors.blue, // Set the color of the border
+                                color:
+                                    Colors.blue, // Set the color of the border
                               ),
                             ),
                           ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:module_14_assignment_contact_list/ui_screen/main_screen.dart'; // Import the main App screen
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
@@ -34,11 +35,13 @@ class _SplashScreenState extends State<SplashScreen>
       );
     });
   }
+
   @override
   void dispose() {
     _controller.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
